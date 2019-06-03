@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "faker": "random.uuid"
+    },
+    "product": {
+      "type": "string",
+      "faker": "commerce.productName"
+    },
+    "unitPrice": {
+      "type": "number",
+      "minimum": 9.99,
+      "maximum": 99.99
+    },
+    "category": {
+      "enum": [ "food", "metalworks", "furniture", "toys", "weapons" ]
+    },
+    "vatTax": {
+      "enum": [ 0, 0.05, 0.08, 0.23 ]
+    },
+    "amount": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 10
+    },
+    "orderedAtDate": {
+      "faker": {
+        "date.past": [1]
+      }
+    }
+  },
+  "required": [
+    "id",
+    "product",
+    "unitPrice",
+    "category",
+    "vatTax",
+    "amount",
+    "orderedAtDate"
+  ],
+  "additionalProperties": false
+}

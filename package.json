@@ -1,0 +1,13 @@
+{
+  "name": "typescript-5i4anz",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@types/c3": "^0.7.0",
+    "@types/node": "^12.0.4",
+    "c3": "^0.7.1",
+    "d3": "^5.9.2",
+    "json-schema-faker": "0.4.3",
+    "rxjs": "^6.5.1"
+  }
+}
